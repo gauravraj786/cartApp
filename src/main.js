@@ -60,18 +60,3 @@ document.getElementById('checkByPincode').addEventListener('click', (ev) => {
     }
 
 })
-/*
-if(localStorage.getItem("key"))
-$.ajax({
-    url: "https://api.mlab.com/api/1/databases/" + myDB + "/collections/" + myCollection + "?apiKey=" + apiKey,
-    type: "GET",
-    success: function(data) {
-        console.log(data);
-    },
- });
-
- if (typeof(Storage) !== "undefined") {
-    localStorage.setItem("key", data);
-    appModule.loadContent(playerData);
-}
- */
