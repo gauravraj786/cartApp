@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cart page</title>
+  <link rel="stylesheet" href="./src/css/style.css" />
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+  <template id="cartItemComponent">
+
+    <div class="cartItem">
+      <div class="itemInfo itemImage">
+        <img src="https://rukminim1.flixcart.com/image/jog2nbk0/mobile/e/x/b/mi-redmi-e7t-na-original-imafazxdh2bd6hep.jpeg" />
+      </div>
+
+      <div class="itemInfo itemDetails">
+        <h3> Gear Carry on backpack</h3>
+        <p class="itemPrice"><b>Rs. 200</b></p>
+        <p class="itemDelivery">Delivery Free</p>
+        <button class="addButton">+</button>
+        <span class="itemQuantity">2</span>
+        <button class="removeButton">-</button>
+        <span class="itemAvailability">stock availability</span>
+
+      </div>
+    </div>
+
+
+  </template>
+
+  <!-- Left pane having cart objects -->
+  <div class="card">
+    <div class="container">
+
+      <!-- Header of the app -->
+      <div class="header">
+        <!-- Heading of the left pane -->
+        <div><h2><b>My Cart</b></h2></div>
+
+        <!-- Header action has the right header options, input and button -->
+        <div class="headerActions">
+          <button class="moveRight" id="checkByPincode">Check</button>
+          <input class="moveRight" type="text" placeholder="Enter pincode"></input>
+        </div>
+        
+      </div>
+      <hr />
+
+      <!-- Empty Card body, populated from the JavaScript -->
+      <div class="cartBody"></div>
+    </div>
+  </div>
+
+  <!-- Cart Summary section on the right -->
+  <div class="priceSummary">
+    <h2><b>Price Details</b></h2>
+    <hr />
+    
+    <div class="cartSummary">
+
+      <div>
+        <span><b>Total Price</b></span>
+        <span class="totalPrice moveRight">Rs 0</span>
+      </div>
+      <div>
+        <span><b>Delivery Charges</b></span>
+        <span class="deliveryCharges moveRight">Rs 0</span>
+      </div>
+      <div>
+        <span><b>Amount Payable</b></span>
+        <span class="amountPayable moveRight">Rs 0</span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Transpiled to ES6 via Babel. Packaged up via Webpack. -->
+  <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>
